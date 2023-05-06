@@ -55,7 +55,7 @@ h6 {
     border-bottom: 2px solid #FFFFFF;
     padding-top: 16px;
     position: absolute;
-
+    width: 100%;
 }
 
 .header__container {
@@ -134,14 +134,15 @@ h6 {
     position: absolute;
 }
 
-.burger__el:before, {
-    top: 0;
-    left: 0;
+.burger__el:before,
+{
+top: 0;
+left: 0;
 }
 
 .burger__el:after {
     bottom: 0;
-    right:  0;
+    right: 0;
     width: 83%;
 }
 
@@ -449,3 +450,128 @@ body {
     font-style: normal;
     font-size: 16px;
 }
+
+.about {
+    padding: 65px 0px 90px;
+
+}
+
+.container {}
+
+.about__container {
+    max-width: 922px;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+}
+
+.section__title_color_grey {
+    color: #E7E7E7;
+}
+
+.section__subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #252525;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+
+.about .section__subtitle {
+    margin-bottom: 20px;
+}
+
+.about__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 51px;
+    counter-reset: item-count;
+}
+
+.about__item {
+    width: 48%;
+    position: relative;
+    padding: 70px 0px;
+}
+
+.about__text::before {
+    content: "0" counter(item-count);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    counter-increment: item-count;
+    content: 0;
+}
+
+.about__text {
+    z-index: 10;
+    position: relative;
+}
+
+.service {}
+
+.container {}
+
+.service__container {}
+
+.section__title {}
+
+.section__title_color_grey {}
+
+.section__subtitle {}
+
+.service__items {
+    padding: 20px 0px;
+
+    position: relative;
+}
+
+.service__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.service__item {
+    width: 23%;
+    border: 2px solid #D5D5D5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.service__link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.service__item-img-wrap {}
+
+.service__item-text {}
+
+.service__btn {
+    text-align: center;
+    padding: 56px;
+}
+
+.service__button {}
